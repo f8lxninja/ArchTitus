@@ -2,7 +2,7 @@
 
 <img src="https://i.imgur.com/YiNMnan.png" />
 
-This README contains the steps I do to install and configure a fully-functional Arch Linux installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all my preferred applications and utilities. The shell scripts in this repo allow the entire process to be automated.)
+This README contains the steps I do to install and configure a fully-functional Arch Linux installation containing a desktop environment, all the support packages (network, bluetooth, audio, printers, etc.), along with all my preferred applications and utilities. The shell scripts in this repo allow the entire process to be automated.) This has been altered to add the surface-linux kernel and enable the touchscreen on Surface Pro devices.
 
 ---
 ## Create Arch ISO or Use Image
