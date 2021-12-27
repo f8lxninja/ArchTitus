@@ -49,6 +49,7 @@ PKGS=(
 'ttf-roboto'
 'zoom' # video conferences
 'snap-pac'
+'libwacom-surface' # surface touchscreen driver
 )
 
 for PKG in "${PKGS[@]}"; do
