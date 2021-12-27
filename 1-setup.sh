@@ -49,6 +49,9 @@ sed -i 's/^#Para/Para/' /etc/pacman.conf
 
 #Enable multilib
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
+
+#Enable linux-surface kernel
+echo -e "[linux-surface]\nServer = https://pkg.surfacelinux.com/arch" >> /etc/pacman.conf
 pacman -Sy --noconfirm
 
 echo -e "\nInstalling Base System\n"
@@ -200,7 +203,16 @@ PKGS=(
 'zsh'
 'zsh-syntax-highlighting'
 'zsh-autosuggestions'
+'linux-surface'
+'linux-surface-headers'
+'iptsd'
 )
+
+curl -s https://raw.githubusercontent.com/linux-surface/linux-surface/master/pkg/keys/surface.asc \
+	| sudo pacman-key --add -
+	
+sudo pacman-key --finger 56C464BAAC421453
+sudo pacman-key --lsign-key 56C464BAAC421453
 
 for PKG in "${PKGS[@]}"; do
     echo "INSTALLING: ${PKG}"
