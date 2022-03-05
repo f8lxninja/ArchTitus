@@ -28,7 +28,6 @@ bridge-utils
 btrfs-progs
 celluloid
 cmatrix
-code
 cronie
 cups
 dialog
@@ -38,6 +37,7 @@ dtc
 efibootmgr
 egl-wayland
 exfat-utils
+firefox
 flex
 fuse2
 fuse3
@@ -51,11 +51,12 @@ grub-customizer
 gst-libav
 gst-plugins-good
 gst-plugins-ugly
+gufw
 haveged
 htop
 jdk-openjdk
-kitty
 libdvdcss
+libreoffice-still
 libtool
 lsof
 lutris
@@ -63,6 +64,7 @@ lzop
 m4
 make
 neofetch
+nextcloud-client
 ntfs-3g
 ntp
 openbsd-netcat
@@ -82,11 +84,8 @@ python-psutil
 python-pyqt5
 python-pip
 qemu
-snap-pac
-snapper
 steam
 swtpm
-synergy
 terminus-font
 traceroute
 ttf-droid
